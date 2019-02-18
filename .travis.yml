@@ -11,15 +11,16 @@ service:
   - docker 
   
 before_install:
-#  - git clone https://github.com/l19328/h3copenr
-  - git submodule init
-  - git submodule update
-  - ls
-  - pwd
+#   - git clone https://github.com/l19328/h3copenr
+#   - git submodule init
+#   - git submodule update
   
-  - cd openr && ls
-  - cd h3cfibservice && ls
-#  - git clone --recursive
+  - git clone --recursive
+  - ls
+  - pwd  
+  - ls openr
+  - ls h3cfibservice 
+
   
 #before_script:
   
