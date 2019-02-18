@@ -11,11 +11,11 @@ service:
   - docker 
   
 before_install:
-#   - git clone https://github.com/l19328/h3copenr
-#   - git submodule init
-#   - git submodule update
+#   - git clone --recursive https://github.com/l19328/h3copenr
+  - git submodule init
+  - git submodule update
   
-  - git clone --recursive
+
   - ls
   - pwd  
   - ls openr
