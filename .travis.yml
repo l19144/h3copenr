@@ -19,7 +19,9 @@ before_install:
   - ls openr
   - ls h3cfibservice
   - ls comwaresdk
-  
+
+install: true
+
 #before_script:
   
 #script:
