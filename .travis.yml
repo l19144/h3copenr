@@ -10,27 +10,13 @@ sudo: required
 service:
   - docker 
   
-before_install:
-#   - git clone --recursive https://github.com/l19328/h3copenr
-#   - git submodule init
-#   - git submodule update
-  - ls
-  - pwd  
-  - ls openr
-  - ls h3cfibservice
-  - ls comwaresdk
-  - echo $GOPATH
-  - mkdir /home/travis/gopath/src/github.com/h3copen
-  - ln -s /home/travis/gopath/src/github.com/l19328/h3copenr/comwaresdk /home/travis/gopath/src/github.com/h3copen/comwaresdk
-  - ln -s /home/travis/gopath/src/github.com/l19328/h3copenr/h3cfibservice /home/travis/gopath/src/github.com/h3copen/h3cfibservice
-  - cd /home/travis/gopath/src/github.com/h3copen
-  - ls 
+# before_install:
   
 install: true
-#   - ls /home/travis/gopath/src/github.com
+
 before_script:
-  - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
-  - ls
-  - go build 
-  - ls
+  - pwd
+  - chmod a+x build/build.sh
+  - ./build/build.sh
+  - pwd
 #script:
