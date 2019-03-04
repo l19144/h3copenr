@@ -20,9 +20,10 @@ before_install:
   - ls h3cfibservice
   - ls comwaresdk
   - echo $GOPATH
+  
+install: 
 
-install: true
-
-#before_script:
+before_script:
+  - ls /home/travis/gopath/src/
   
 #script:
