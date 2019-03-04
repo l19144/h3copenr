@@ -21,7 +21,7 @@ before_script:
   - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
   - docker pull ubuntu:16.04
   - docker images
-  - docker run -itd --name ubuntu ubuntu:16.04 /bin.bash 
+  - docker run -itd --name ubuntu ubuntu:16.04 /bin/bash 
   - docker ps
   - docker cp fibhandler ubuntu:/ 
   - docker exec ubuntu  "ls -l"
