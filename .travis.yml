@@ -11,13 +11,13 @@ service:
   - docker 
   
 before_install:
-  - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
+
 install: true
 
 before_script:
   - pwd
   - chmod a+x build/build.sh
   - ./build/build.sh
-  - pwd
+  - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
 script:
 
