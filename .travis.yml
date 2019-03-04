@@ -25,7 +25,7 @@ before_script:
   - docker ps
   - docker cp fibhandler busybox:/ 
 
-  - docker exec busybox sh -c "./fibhandler -h"
+  - docker exec busybox "./fibhandler -h"
   - docker exec busybox sh -c "ls"
   
 script:
