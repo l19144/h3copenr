@@ -10,8 +10,8 @@ sudo: required
 service:
   - docker 
   
-# before_install:
-  
+before_install:
+  - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
 install: true
 
 before_script:
@@ -19,4 +19,5 @@ before_script:
   - chmod a+x build/build.sh
   - ./build/build.sh
   - pwd
-#script:
+script:
+
