@@ -32,4 +32,5 @@ before_script:
   - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
   - ls
   - go build 
+  - ls
 #script:
