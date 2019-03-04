@@ -29,6 +29,7 @@ before_install:
 install: true
 #   - ls /home/travis/gopath/src/github.com
 before_script:
-  - ls /home/travis/gopath/src/
-  
+  - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
+  - ls
+  - go build 
 #script:
