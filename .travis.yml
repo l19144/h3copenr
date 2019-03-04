@@ -2,8 +2,8 @@ dist: xenial
 
 language: go
 
-# go: 
-#   - 1.11.x
+go: 
+  - 1.11.x
 
 sudo: required
 
@@ -12,10 +12,8 @@ service:
   
 before_install:
 #   - git clone --recursive https://github.com/l19328/h3copenr
-  - git submodule init
-  - git submodule update
-  
-
+#   - git submodule init
+#   - git submodule update
   - ls
   - pwd  
   - ls openr
