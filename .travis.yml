@@ -22,7 +22,7 @@ before_install:
   - echo $GOPATH
   
 install: 
-  - ls /home/travis/gopath/src/
+  - ls /home/travis/gopath/src/github.com
 before_script:
   - ls /home/travis/gopath/src/
   
