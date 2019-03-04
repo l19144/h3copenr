@@ -19,6 +19,12 @@ before_script:
   - chmod a+x build/build.sh
   - ./build/build.sh
   - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
+  - docker pull busybox
+  - docker images
+  - docker run -itd --name busybox:late busybox /bin/bash
+  - docker ps
+  - docker cp fibhandler busybox:/ 
+  - docker exec busybox sh -c "ls"
   
 script:
 
