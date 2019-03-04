@@ -21,7 +21,7 @@ before_script:
   - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
   - docker pull busybox
   - docker images
-  - docker run -itd --name busybox busybox:latest bash
+  - docker run -itd --name busybox busybox:latest 
   - docker ps
   - docker cp fibhandler busybox:/ 
   - docker exec busybox sh -c "ls"
