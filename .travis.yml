@@ -1,6 +1,6 @@
 dist: xenial
 
-language: go
+# language: go
 
 go: 
   - 1.11.x
@@ -19,5 +19,6 @@ before_script:
   - chmod a+x build/build.sh
   - ./build/build.sh
   - cd /home/travis/gopath/src/github.com/h3copen/h3cfibservice/fibhandler
+  
 script:
 
